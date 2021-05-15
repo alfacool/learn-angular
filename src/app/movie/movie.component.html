@@ -1,0 +1,20 @@
+<div style="padding: 13px;">
+<!-- <mat-grid-list cols="5" rowHeight="2:1" > -->
+  <!-- <mat-grid-tile *ngFor="let movielist of moviedata" > -->
+  <mat-card style="margin-top:11px;" *ngFor="let movielist of moviedata">
+    <mat-card-header>
+      <img style="height:10%; width: 10%;" src="{{ 'https://image.tmdb.org/t/p/original'+ movielist.poster_path }}" />
+
+    </mat-card-header>
+    <br/>
+    <mat-card-content>
+      <mat-card-title>{{movielist.title}}</mat-card-title>
+      <p>
+        {{movielist.overview}}
+      </p>
+
+    </mat-card-content>
+  </mat-card>
+  <!-- </mat-grid-tile> -->
+  <!-- </mat-grid-list> -->
+</div>
